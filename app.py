@@ -161,7 +161,7 @@ def initialize_session():
         st.session_state.welcomed = True
 
 def initialize_gemini():
-    GOOGLE_API_KEY = "AIzaSyBJFSzwJPdM9q03kDMekBkXwLZ35RfTTiM"
+    GOOGLE_API_KEY = ""
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-pro')
     return model
